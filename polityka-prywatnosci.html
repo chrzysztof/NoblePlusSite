@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polityka prywatności — Noble+</title>
+  <meta name="description" content="Polityka prywatności aplikacji Noble+: jakie dane są przetwarzane lokalnie, co opuszcza urządzenie i dlaczego.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%233a3f9e'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EN%2B%3C/text%3E%3C/svg%3E">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Noble+ — strona główna">Noble<span>+</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="menu" aria-label="Główne menu">
+        <ul>
+          <li><a href="index.html#funkcje">Funkcje</a></li>
+          <li><a href="index.html#nadgodziny">Nadgodziny</a></li>
+          <li><a href="index.html#jak-dziala">Jak to działa</a></li>
+          <li><a href="index.html#licencja">Licencja</a></li>
+          <li><a href="polityka-prywatnosci.html" aria-current="page">Polityka prywatności</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="tresc">
+
+    <div class="page-head">
+      <div class="wrap">
+        <h1>Polityka prywatności</h1>
+        <p>Aplikacja Noble+ · obowiązuje od 2 października 2026 r.</p>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="prose">
+
+        <h2>Najważniejsze w skrócie</h2>
+        <div class="callout">
+          <ul>
+            <li>Noble+ działa w pełni lokalnie. Plik eksportu z dziennika wczytujesz z własnego dysku, a analiza odbywa się na Twoim komputerze.</li>
+            <li>Dane uczniów i nauczycieli nie są wysyłane ani przechowywane na żadnym serwerze.</li>
+            <li>Z urządzenia wychodzą tylko dwie rzeczy: kod licencyjny szkoły oraz, przy jednej funkcji, miejscowość i kod pocztowy ucznia.</li>
+            <li>Aplikacja nie zawiera telemetrii, analityki ani reklam.</li>
+          </ul>
+        </div>
+
+        <h2>1. Kto jest dostawcą aplikacji</h2>
+        <p>
+          Dostawcą aplikacji Noble+ jest Krzysztof Neumann</span>.
+          Kontakt w sprawach dotyczących prywatności: <a href="mailto:neumann.krzysztof@gmail.com">neumann.krzysztof@gmail.com</a>.
+        </p>
+
+        <h2>2. Dane przetwarzane lokalnie na Twoim urządzeniu</h2>
+        <p>
+          Noble+ analizuje pliki eksportu (XML lub ZIP) z dziennika elektronicznego, takiego jak Vulcan/UONET+ czy Librus.
+          Użytkownik, zwykle dyrektor szkoły, sam wskazuje plik na swoim dysku. Z jego zawartości aplikacja wylicza
+          frekwencję, oceny, niewpisane tematy, ryzyko niesklasyfikowania uczniów i nadgodziny nauczycieli.
+        </p>
+        <p>
+          Całe to przetwarzanie odbywa się na urządzeniu użytkownika. Dostawca nie otrzymuje tych danych, nie ma do nich dostępu
+          i nie jest ich odbiorcą. Raporty i pliki Excela, które generujesz, zapisują się tam, gdzie je zapiszesz, i nie są
+          nigdzie przesyłane.
+        </p>
+
+        <h2>3. Co opuszcza urządzenie i dlaczego</h2>
+        <p>Aplikacja łączy się z serwerem dostawcy wyłącznie w dwóch sytuacjach:</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Funkcja</th>
+                <th scope="col">Co jest wysyłane</th>
+                <th scope="col">Co wraca</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Weryfikacja licencji</strong> (przy uruchomieniu)</td>
+                <td>Wyłącznie kod licencyjny szkoły.</td>
+                <td>Podpisana cyfrowo (RSA) informacja o ważności licencji.</td>
+              </tr>
+              <tr>
+                <td><strong>Ustalanie organu egzekucyjnego</strong> (do pism w sprawie niezrealizowania obowiązku szkolnego)</td>
+                <td>Wyłącznie miejscowość i kod pocztowy ucznia.</td>
+                <td>Właściwy organ (wójt, burmistrz lub prezydent) ustalony na podstawie rejestru TERYT.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          W żadnym z tych przypadków nie wysyłamy imion, nazwisk, ocen, frekwencji, zawartości plików eksportu ani innych danych
+          uczniów lub nauczycieli. Przy ustalaniu organu egzekucyjnego nie jest wysyłane imię ani nazwisko ucznia, a aplikacja
+          przekazuje tylko dane adresowe niezbędne do wyszukania urzędu.
+        </p>
+        <p>
+          Obie funkcje korzystają z tego samego, osobnego serwera licencyjnego.
+          Informacja o ważności licencji jest podpisana cyfrowo, dzięki czemu aplikacja może sprawdzić jej autentyczność.
+        </p>
+
+        <h2>4. Dane zapisywane lokalnie</h2>
+        <p>
+          Na urządzeniu użytkownika zapisywane są ustawienia aplikacji, na przykład pensum nauczycieli, oraz pamięć podręczna
+          licencji (ostatnia odpowiedź o ważności licencji). Pozostają one wyłącznie na tym urządzeniu.
+          Użytkownik może je w każdej chwili usunąć, kasując lokalne dane aplikacji.
+        </p>
+
+        <h2>5. Telemetria, analityka, reklamy</h2>
+        <p>
+          Noble+ nie zawiera telemetrii, narzędzi analitycznych, reklam ani trackerów, i nie profiluje użytkowników.
+        </p>
+
+        <h2>6. Dane techniczne połączenia</h2>
+        <p>
+          Jak przy każdym połączeniu przez internet, serwer, z którym łączy się aplikacja, widzi techniczne dane połączenia,
+          w szczególności adres IP. Są one potrzebne do obsługi samego połączenia.
+          <span class="todo">[UZUPEŁNIJ: czy serwer zapisuje logi z adresami IP i jak długo je przechowuje; jeśli nie zapisuje — napisz to wprost.]</span>
+        </p>
+
+        <h2>7. Odpowiedzialność szkoły za dane z dziennika</h2>
+        <p>
+          Ponieważ dane z dziennika pozostają w Twojej szkole, to szkoła decyduje o tym, jak są przechowywane i zabezpieczone.
+          Warto pamiętać o zabezpieczeniu komputera, na którym działa Noble+, oraz o ochronie pobranych plików eksportu
+          i wygenerowanych raportów, bo to w nich znajdują się dane osobowe.
+        </p>
+
+        <h2>8. Ta strona internetowa</h2>
+        <p>
+          Ta strona jest statyczna. Nie używa plików cookies ani skryptów analitycznych. Jedyny skrypt to mały plik obsługujący menu na telefonie, a czcionki (Sora i Inter)
+          oraz pozostałe zasoby są serwowane z tej samej strony, bez ładowania ich z zewnętrznych serwerów. Strona jest hostowana w usłudze GitHub Pages, której operator może
+          przetwarzać techniczne dane odwiedzin (np. adres IP) na własnych zasadach.
+        </p>
+
+        <h2>9. Prawa osób, których dane dotyczą</h2>
+        <p>
+          W zakresie, w jakim dostawca przetwarza dane osobowe (np. dane osoby kontaktującej się z nami mailowo), przysługują Ci
+          prawa wynikające z RODO: dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, sprzeciwu oraz
+          przenoszenia danych. Masz też prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych.
+          Aby skorzystać z tych praw, napisz na adres <a href="mailto:neumann.krzysztof@gmail.com">neumann.krzysztof@gmail.com</a>.
+        </p>
+
+        <h2>10. Kontakt i zgłoszenia</h2>
+        <p>
+          Pytania dotyczące prywatności, zgłoszenia i wnioski kieruj na adres:
+          <a href="mailto:neumann.krzysztof@gmail.com">neumann.krzysztof@gmail.com</a>.
+        </p>
+
+        <h2>11. Zmiany polityki</h2>
+        <p>
+          Jeśli zmieni się sposób działania aplikacji w zakresie danych, zaktualizujemy tę politykę i podamy nową datę
+          obowiązywania na górze strony.
+        </p>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Noble+ ·</p>
+      <ul>
+        <li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li>
+        <li><a href="mailto:neumann.krzysztof@gmail.com">Kontakt</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
