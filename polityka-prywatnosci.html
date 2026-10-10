@@ -122,7 +122,7 @@
         <p>
           Jak przy każdym połączeniu przez internet, serwer, z którym łączy się aplikacja, widzi techniczne dane połączenia,
           w szczególności adres IP. Są one potrzebne do obsługi samego połączenia.
-          <span class="todo">[UZUPEŁNIJ: czy serwer zapisuje logi z adresami IP i jak długo je przechowuje; jeśli nie zapisuje — napisz to wprost.]</span>
+          Serwer licencyjny (nginx) zapisuje standardowe logi dostępu: adres IP, datę i godzinę oraz adres żądania. Nie zapisujemy w nich danych uczniów ani nazwisk. Logi są przechowywane przez 14 dni, a następnie automatycznie usuwane. Wykorzystujemy je wyłącznie do diagnozowania błędów i ochrony serwera przed nadużyciami.
         </p>
 
         <h2>7. Odpowiedzialność szkoły za dane z dziennika</h2>
